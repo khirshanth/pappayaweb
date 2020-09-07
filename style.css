@@ -1,0 +1,715 @@
+.header{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://pappayasign.com/app/uploads/2020/02/maxresdefault.jpg");
+    width:100.6%;
+    min-height: 110vh; 
+    position: relative;
+    top:-10px;
+    border-bottom-right-radius: 50% 5%;
+    border-bottom-left-radius: 50% 5%;
+  
+}
+*{
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position:fixed;
+    overflow-y:hidden ;
+    z-index: 1;
+}
+.nav-img{
+    height: 50px;
+    padding: 0 50px;
+    margin-top:10px;
+}
+nav ul{
+    float: right;
+    margin-right: 30%;
+    margin:20;
+    padding-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: none;
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1px;
+    color:white;
+    
+}
+.active,a:hover{
+    color:#D25527;
+    transition: .5s;
+    text-decoration-line: underline;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    color: white;
+    line-height: 40px;
+    margin-right: 40px;
+    margin:20;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:968px){
+    .nav-img{
+        height: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:12px;
+    }
+}
+ @media(max-width:400px){
+    .checkbtn{
+        display: block; 
+       
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        transition: all .5s;
+        left:-120%;
+        top:80px;
+        text-align: center;
+        background: rgba(0,0,0,0.2);
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+        padding-left: -20px;
+    
+    }
+    a:hover,a.active{
+        background:none;
+        color:#D25527;
+    }
+    nav.black{
+        width: 400px;
+    }
+}
+    
+#check:checked ~ ul{
+    left:0;
+}
+nav.black{
+    background: rgb(22, 21, 21);
+    
+}
+.header2{
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    overflow-y: hidden;
+    height: 100vh;
+   
+} 
+ .header-img{
+  padding-top: 110px;
+  overflow-y: hidden;
+  height: 240px;
+}
+@media(max-width:400px){
+    .header-img{
+        height: 190px;
+
+    }
+}
+.header-content{
+    padding: 30px;
+    overflow-y: hidden;
+}
+.typing{
+    font-weight: bolder;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    overflow-y: hidden;
+    
+}
+@media(max-width:400px){
+    .typing{
+        font-size: 30px;
+        font-weight: bolder;
+        line-height: 1.7;
+        font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,sans-serif;
+    }
+    .header-content{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .title-p{
+        line-height: 1;
+        padding-left: 10px;
+        color:white;
+        font-size:25px;
+    }
+    .header{
+        min-height: 90vh;
+    }
+   
+}
+@media(max-width:400px){
+    .scroll{
+       position: absolute;
+       left: -120px;
+
+       
+      }
+}
+
+.title-p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(202, 188, 188);
+    text-align: center;
+    padding-top: 50px;
+    overflow-y: hidden;
+}
+.button{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 1em;
+    color: white;
+    background-color: #D25527;
+    border-radius:4px 4px  4px 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0,0,0.2);
+    padding: 20px 35px 20px 35px;
+    padding-right: 50px;
+   
+   
+   
+   
+}
+.button:hover{
+    background-color:rgb(212, 16, 108);
+text-decoration: underline;
+}
+.scroll{
+    padding-left: 38%;
+    padding-top:5%; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.business{
+    min-height: 70vh;
+    text-align: center;
+}
+.business>h1{
+    padding: 10%;
+    line-break: auto;
+    line-height: 1.1em;
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.business>p{
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 17px;
+    color:#7a7a7a;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.7em;
+}
+@media(max-width:400px){
+    .business>p{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .body3>p{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   
+}
+.body3{
+    min-height: 60vh;
+    background-image: url("https://pappayasign.com/app/uploads/2019/02/landerBG4.jpg");
+    text-align: center;
+    background-color:#000000;
+    
+}
+.body3>p{
+    padding-top: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.1em;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 10px rgba(24, 23, 23, 0.55);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.body3>i{
+    padding-top: 100px;
+    font-size: 50px;
+    color:white;
+    font-weight: bold;
+
+}
+
+.body3>h6{
+     overflow: hidden;
+    color:white;
+}
+
+.body-4{
+    min-height: 60vh;
+    text-align: center;
+    overflow-y: hidden;
+}
+.phone-content>p{
+    letter-spacing: 0.1em;
+    padding-top: 10%;
+    color: rgb(85, 85, 85)
+}
+.phone-content>h1{
+    font-weight: 800;
+    font-size: 50px;
+    
+    font-family: 'Roboto',sans-serif;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 400px 350px 400px;
+    grid-template-rows: 700px 700px 700px;
+    grid-gap:0.2rem;
+    overflow-y:hidden ;
+}
+.col2{
+  padding-left:5px;
+    
+}
+.row1{
+    padding-top:30%;
+}
+.col1>img{
+    height: 70px;
+    padding-left: 50%;
+}
+.col3>img{
+   padding-left: 50%;
+    height: 70px;
+}
+.col5>img{
+    padding-left: 50%;
+    height: 70px; 
+}
+.row2{
+    padding-top:15%;
+}
+.col4{
+    padding-left:0;
+}
+.right1{
+    padding-left: -50%;
+}
+.cont3{
+   
+    padding-left: 0px;
+}
+
+.cont2{
+    padding-left:20px;
+    
+   
+}
+@media(max-width:400px){
+    .container{
+        min-height: 250vh;
+        grid-template-columns: 400px;
+        grid-template-rows: 640px  550px 700px ;
+        grid-template-areas: "cont1" 
+        "cont2" 
+        "cont3";
+        
+      
+    }
+    .body-4{
+        min-height: 20vh;
+
+    }
+    .c4>p{
+          font-size:12px;
+    }
+    .c2>p{
+        font-size: 12px;
+    }
+}
+#phone{
+    height: 550px;
+    width: 300px;
+}
+@media(max-width:400px){
+    .cont1{
+        text-align: center;
+        justify-content: center;
+        padding-right: 25%;
+        padding-bottom: 0;
+    }
+    .container{
+        padding-bottom: 25%;
+    }
+    .cont2{
+        padding-left: 10%;
+    }
+} 
+
+.c1>img{
+    height: 70px;
+    padding-left: 20%;
+}
+.r1{
+    padding-top: 30%;
+    padding-left: 10px;
+}
+.c3>img{
+    height: 70px;
+    padding-left: 20%;
+}
+.r2{
+    padding-top: 10%;
+}
+.body6{
+    background-image: url(http://pappayasign.com/app/uploads/2019/02/landerBG5.jpg);
+    min-height: 50vh;
+    background-position: center center;
+  
+ }
+ .container1{
+     display: grid;
+     height: 50vh;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows:50vh 50vh 50vh 50vh; 
+     grid-template-areas: "nums1" "nums2" "nums3" "nums4";
+
+ }
+ 
+ 
+ @media(max-width:400px){
+     .container1{
+         grid-template-columns: 1fr;
+         grid-template-rows:30vh 35vh 35vh 35vh;
+         min-height: 135vh;
+     }
+     .nums2>p{
+         font-size: 20px;
+         padding-bottom: 40%;
+     }
+ }
+
+
+.nums1 {
+    flex:1;
+    text-align: center;
+    padding:100px;
+    overflow-y: hidden;
+}
+.num{
+    color: white;
+    font-size: 60px;
+    overflow-y: hidden;
+}
+.nums1>p{
+    color:rgb(189, 176, 176);
+    font-weight: bolder;
+    overflow-y: hidden;
+    font-size:12px;
+    padding-left: 0px;
+}
+.nums2>p{
+    color:rgb(189, 176, 176);
+    font-weight: bolder;
+    overflow-y: hidden;
+    font-size:12px;
+    padding-left: 0px;
+}
+.nums3>p{
+    color:rgb(189, 176, 176);
+    font-weight: bolder;
+    overflow-y: hidden;
+    font-size:12px;
+    padding-left: 0px;
+}
+.nums4>p{
+    color:rgb(189, 176, 176);
+    font-weight: bolder;
+    overflow-y: hidden;
+    font-size:12px;
+    padding-left: 0px;
+}
+.body7{
+    min-height:300px;
+    text-align: center;
+    padding: 10%;
+    padding-bottom: 0;
+   
+}
+
+.body7>p{
+    overflow: hidden;
+    letter-spacing: 0.5em;
+   
+}
+.body7>h1{
+    overflow: hidden;
+    font-size: 60px;
+}
+@media(max-width:400px){
+    .body7>h1{
+         
+         max-height: 3cm;
+         font-size: 35px;
+         min-width: 100%;
+         padding: 0;
+    }
+    .body7{
+        min-height: 200px;
+    }
+      
+    
+}
+
+/* .container2{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns:5fr;
+    padding: 0%;
+    grid-template-rows:0.3fr 0.3fr 0.3fr;
+}
+.cnt-img1{
+    background: peru;
+}
+.cnt-img2{
+    background: purple;
+}
+.cnt-img3{
+    background: red;
+} */
+.body-6{
+    height: 50vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.img-1{
+    max-height: 500px;
+    max-width:450px;
+  
+   
+
+}
+.img-content{
+    display: flex;
+    overflow: hidden;
+    
+}
+.image{
+    position: relative;
+}
+.img-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.6);
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+
+}
+.img-overlay:hover{
+    opacity: 1;
+}
+.img-overlay>p{
+    font-size:1.5rem;
+    padding-left: 80px;
+    font-weight: bolder;
+}
+
+.container-4{
+    background-image: url(https://pappayasign.com/app/uploads/2019/02/landerBG5.jpg);
+     
+}
+
+.container4{
+    display: grid;
+    max-height: 140vh;
+    grid-template-columns:0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 450px 600px 600px 600px;
+    grid-template-areas: "bike" 
+    "car" 
+    "plane" 
+    "rocket";
+    grid-gap: 10px;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    border-radius: 4px;
+}
+@media(max-width:400px){
+    .container4{
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 600px 500px;
+        padding-left: 10%;
+        padding-top: 10%;
+        max-height: 3000px;
+    }
+}
+.bike{
+    background: white;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+}
+.bike>h4{
+    font-size:70px;
+    padding-top:10%;
+}
+.car>h4{
+    font-size:70px;
+    padding-top:10%;
+}
+.plane>h4{
+    font-size:70px;
+    padding-top:10%;
+}
+.rocket>h4{
+    font-size:70px;
+    padding-top:10%;
+}
+.car{
+    background:white;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    min-height: 560px;
+}
+.plane{
+    background:white;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    min-height: 600px;
+}
+.rocket{
+    background:white;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    min-height: 500px;
+}
+.content>h1{
+    color:#d25827;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.content>p{
+    text-align: center;
+    font-size: 16px;
+    color:#7a7a7a;
+    padding-bottom:0px;
+    padding-top: 0;
+    border-bottom: 0.5px solid #7a7a7a;
+    border-bottom-left-radius:20 ;
+    margin-bottom: 0px;
+}
+.content>h4{
+    font-size:20px ;
+    text-align: center;
+ 
+}
+.container7{
+    background-image: url(https://pappayasign.com/app/uploads/2019/02/landerBG5.jpg);
+    opacity: 0.9;
+    min-height: 700px;
+}
+.container7{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px ;
+    overflow-y: hidden;
+}
+@media(max-width:400px){
+    .container7{
+        grid-template-columns:1fr ;
+       grid-template-rows:650px ;
+}
+.form{
+    padding-left: 0%;
+    width: 300px;
+    height: 600px;
+}
+    }
+    
+
+.form{
+    padding-top: 20%;
+    padding-left: 20%;
+    overflow-y: hidden;
+}
+.contact>h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    overflow-y: hidden;
+    padding-top: 10px;
+}
+.row-contact{
+    padding-left: 20%;
+    padding-top: 20%;
+}
+.form1{
+    width:400px;
+    height: 520px;
+    background: whitesmoke;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding:20px;
+    overflow-y: hidden;
+
+}
+.me{
+    padding-left: 10px;
+    text-align: left;
+}
+.me>input{
+    border:none;
+    color:black;
+    width: 100%;
+}
+.me>textarea{
+    border:none;
+}
+.button2{
+    background-color:purple;
+    color: white;
+    padding:10px 35px 10px 35px;
+    border-radius: 6px;
+    
+}
